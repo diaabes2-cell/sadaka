@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>صدقة جارية | على روح المغفور له بإذن الله  محمود عبدالله حسن</title>
+
+
+<style>
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    background:
+      linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+      url("photo 1.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    max-width:650px;
+    margin:30px auto;
+    background:rgba(255,255,255,0.95);
+    border-radius:16px;
+    padding:20px;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.header img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #2e8b57;
+}
+
+.header h2{
+    margin:10px 0 5px;
+}
+
+.header h3{
+    margin:0;
+    color:#2e8b57;
+}
+
+.zekr{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    border:1px solid #ddd;
+    border-radius:12px;
+    padding:12px;
+    margin-bottom:10px;
+    gap:10px;
+}
+
+.zekr span{
+    flex:1;
+    font-size:17px;
+}
+
+.counter{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.count{
+    width:32px;
+    text-align:center;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.plus{
+    background:#1e90ff;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:6px 14px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.share{
+    width:100%;
+    background:#25d366;
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    padding:14px;
+    font-size:18px;
+    margin:15px 0;
+    cursor:pointer;
+}
+
+.duaa{
+    background:#111;
+    color:#fff;
+    padding:18px;
+    border-radius:14px;
+    line-height:1.9;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="header">
+    <img src="photo 1.jpg" alt="محمود عبدالله حسن">
+    <h2>صدقة جارية على روح</h2>
+    <h3>محمود عبدالله حسن</h3>
+</div>
+
+<!-- الأذكار -->
+
+<div class="zekr"><span>سبحان الله</span><div class="counter"><span class="count" id="c1">0</span><button class="plus" onclick="inc('c1')">+</button></div></div>
+
+<div class="zekr"><span>الحمد لله</span><div class="counter"><span class="count" id="c2">0</span><button class="plus" onclick="inc('c2')">+</button></div></div>
+
+<div class="zekr"><span>لا إله إلا الله</span><div class="counter"><span class="count" id="c3">0</span><button class="plus" onclick="inc('c3')">+</button></div></div>
+
+<div class="zekr"><span>الله أكبر</span><div class="counter"><span class="count" id="c4">0</span><button class="plus" onclick="inc('c4')">+</button></div></div>
+
+<div class="zekr"><span>لا حول ولا قوة إلا بالله</span><div class="counter"><span class="count" id="c5">0</span><button class="plus" onclick="inc('c5')">+</button></div></div>
+
+<div class="zekr"><span>أستغفر الله</span><div class="counter"><span class="count" id="c6">0</span><button class="plus" onclick="inc('c6')">+</button></div></div>
+
+<div class="zekr"><span>سبحان الله وبحمده</span><div class="counter"><span class="count" id="c7">0</span><button class="plus" onclick="inc('c7')">+</button></div></div>
+
+<div class="zekr"><span>لا إله إلا الله وحده لا شريك له؛ له الملك وله الحمد وهو على كل شيء قدير</span><div class="counter"><span class="count" id="c8">0</span><button class="plus" onclick="inc('c8')">+</button></div></div>
+
+<div class="zekr"><span>اللهم صلِّ وسلم وبارك على سيدنا محمد ﷺ</span><div class="counter"><span class="count" id="c9">0</span><button class="plus" onclick="inc('c9')">+</button></div></div>
+
+<button class="share" onclick="share()">📲 مشاركة الصفحة</button>
+
+<!-- الدعاء المأثور -->
+<div class="duaa">
+ <strong>الدعاء المأثور للمتوفى:</strong><br><br>
+اللهم اغفر له وارحمه، وعافه واعف عنه،  
+وأكرم نزله، ووسع مدخله،  
+واغسله بالماء والثلج والبرد،  
+ونقه من الخطايا كما ينقى الثوب الأبيض من الدنس،  
+وأبدله دارًا خيرًا من داره، وأهلًا خيرًا من أهله،  
+وزوجًا خيرًا من زوجه،  
+وأدخله الجنة، وأعذه من عذاب القبر ومن عذاب النار.
+</div>
+
+</div>
+
+<script>
+function inc(id){
+    let el = document.getElementById(id);
+    el.innerText = parseInt(el.innerText) + 1;
+}
+
+function share(){
+    let msg = "صدقة جارية على روح محمود عبدالله حسن 🤍";
+    let url = window.location.href;
+    window.open("https://wa.me/?text=" + encodeURIComponent(msg + " " + url));
+}
+</script>
+
+</body>
+</html>

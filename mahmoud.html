@@ -2,6 +2,8 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>صدقة جارية | على روح المغفور له بإذن الله  محمود عبدالله حسن</title>
 
 
@@ -105,6 +107,27 @@ body{
     line-height:1.9;
     font-size:16px;
 }
+ @media (max-width: 600px) {
+    .container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    .header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .zekr span {
+        font-size: 15px;
+    }
+
+    .plus {
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+}
+   
 </style>
 </head>
 
@@ -138,8 +161,6 @@ body{
 
 <div class="zekr"><span>اللهم صلِّ وسلم وبارك على سيدنا محمد ﷺ</span><div class="counter"><span class="count" id="c9">0</span><button class="plus" onclick="inc('c9')">+</button></div></div>
 
-<button class="share" onclick="share()">📲 مشاركة الصفحة</button>
-
 <!-- الدعاء المأثور -->
 <div class="duaa">
  <strong>الدعاء المأثور للمتوفى:</strong><br><br>
@@ -153,8 +174,9 @@ body{
 </div>
 
 </div>
+<button class="share" onclick="share()">📲 مشاركة الصفحة</button>
 
-<script>
+    <script>
 function inc(id){
     let el = document.getElementById(id);
     el.innerText = parseInt(el.innerText) + 1;
@@ -169,3 +191,5 @@ function share(){
 
 </body>
 </html>
+
+
